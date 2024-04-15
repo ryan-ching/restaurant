@@ -9,6 +9,7 @@ function App() {
   return (
     <main>
       <Header />
+      <meta name="description" content="Little Lemon is a restaurant."></meta>
       <Nav />
       <Main />
       <Footer />
