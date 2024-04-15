@@ -5,7 +5,14 @@
 }
 
 .footer-links,
-.social-links {
+.social-links{
+    list-style:none;
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
+}
+
+.social-link {
     list-style:none;
     text-decoration: none;
     color: inherit;
@@ -13,6 +20,11 @@
 }
 
 .footer-links:hover,
+.social-link:hover {
+
+    color:green;
+}
+
 .social-link:hover {
     color:green;
 }
