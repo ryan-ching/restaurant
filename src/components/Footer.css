@@ -1,0 +1,18 @@
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.footer-links,
+.social-links {
+    list-style:none;
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
+}
+
+.footer-links:hover,
+.social-link:hover {
+    color:green;
+}

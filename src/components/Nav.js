@@ -1,10 +1,13 @@
+import React from 'react';
+import '../App.css'
 function Nav() {
     return (
       <nav>
-        <ul>
-          <li><a href="#Header">Header</a></li>
-          <li><a href="#Footer">Footer</a></li>
-          <li><a href="#Main">Contact</a></li>
+        <ul className="grid-container">
+          <li className="grid-item"><a href="#Header">Home</a></li>
+          <li className="grid-item"><a href="#Footer">Contact</a></li>
+          <li className="grid-item"><a href="#Main">Menu</a></li>
+          <li className="grid-item"><a href="#Main">Reservations</a></li>
         </ul>
       </nav>
     );
