@@ -1,0 +1,16 @@
+.nav-bar {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.nav-item a{
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
+}
+
+.nav-item a:hover{
+    color: green;
+}

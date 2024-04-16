@@ -1,14 +1,15 @@
 import React from 'react';
-import '../App.css'
+import './Nav.css'
+
 function Nav() {
     return (
-      <nav>
-        <ul className="grid-container">
-          <li className="grid-item"><a href="#Header">Home</a></li>
-          <li className="grid-item"><a href="#Footer">Contact</a></li>
-          <li className="grid-item"><a href="#Main">Menu</a></li>
-          <li className="grid-item"><a href="#Main">Reservations</a></li>
-        </ul>
+      <nav className="nav-container">
+        <div className="nav-bar">
+          <h1 className="nav-item"><a href="#ReserveTable">Reserve A Table</a></h1>
+          <h1 className="nav-item"><a href="#Home">Home</a></h1>
+          <h1 className="nav-item"><a href="#Menu">Menu</a></h1>
+          <h1 className="nav-item"><a href="#Reviews">Reviews</a></h1>
+        </div>
       </nav>
     );
   }

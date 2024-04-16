@@ -1,0 +1,31 @@
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: left;
+    height: 100vh;
+}
+
+.main-item {
+    padding: 100px;
+    max-width: 50%;
+}
+
+.main-button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    padding: 15px 32px;
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.main-text {
+    color: black;
+    padding: 10px;
+    font-size: 50px;
+}
+
+
