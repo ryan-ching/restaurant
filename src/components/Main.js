@@ -14,7 +14,7 @@ function Main() {
             <button className="main-button">Order Online</button>
           </div>
           <div className="main-item">
-            <img src={food1} alt="food1" style={{width:'50vh', width:'50vh'}}/>
+            <img src={food1} alt="food1" style={{width:'50vh', height:'30vh'}}/>
           </div>
         </main>
       </PageView>
