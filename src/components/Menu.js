@@ -8,6 +8,8 @@ import salad from '../images/salad.jpg';
 import platter from '../images/platter.jpg';
 import './Menu.css';
 import MenuItem from './MenuItem';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 const menu = [
   {
     name: "Rice Plate",
@@ -51,11 +53,15 @@ function Menu() {
     return (
       <PageView isDarkBackground maxHeight='100vh'>
           <div className="menu-grid" key={currentIndex}>
-            <button className="menu-nav" onClick={handlePrev}>Prev</button>
+            <button className="menu-nav" onClick={handlePrev}>
+              <FontAwesomeIcon icon={faArrowLeft} />
+            </button>
             <MenuItem item={menu[(currentIndex - 1 + menu.length) % menu.length]}/>
             <MenuItem item={menu[currentIndex]}/>
             <MenuItem item={menu[(currentIndex + 1) % menu.length]}/>
-            <button className="menu-nav" onClick={handleNext}>Next</button>
+            <button className="menu-nav" onClick={handleNext}>
+              <FontAwesomeIcon icon={faArrowRight} />
+            </button>
           </div>
       </PageView>
     );

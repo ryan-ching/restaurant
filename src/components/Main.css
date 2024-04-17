@@ -28,4 +28,10 @@
     font-size: 50px;
 }
 
+.main-item img {
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 1);
+    margin: 2vh;
+    width: 30vw;
+    height: 25vh;
+}
 
