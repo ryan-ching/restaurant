@@ -6,10 +6,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
 .menu-nav {
-    color:black;
+    color:#b1a345;
+    background-color: #4e5e57;
+    border: none;
+    font-size: 40px;
+    width: 50px;
+    height: 50vh;
+}
+
+.menu-item {
+    opacity: 1; /* Initial opacity for menu items */
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out; /* Transition properties */
+    flex: 1; /* Make menu items share available space equally */
+    transform: translateX(-100%);
+}
+
+.transitioning {
+    pointer-events: none;
+}
+
+.menu-item.active {
+    opacity: 1;
 }
 

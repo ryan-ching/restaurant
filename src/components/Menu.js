@@ -44,21 +44,30 @@ const menu = [
 ]
 function Menu() {
   const [currentIndex, setCurrentIndex] = React.useState(0);
+  const [transitioning, setTransitioning] = React.useState(false);
   const handleNext = () => {
-    setCurrentIndex((currentIndex + 1) % menu.length);
+    setTransitioning(true);
+    setTimeout(() => {
+      setCurrentIndex((currentIndex + 1) % menu.length);
+      setTransitioning(false);
+    }, 300);
   }
   const handlePrev = () => {
-    setCurrentIndex((currentIndex - 1 + menu.length) % menu.length);
+    setTransitioning(true);
+    setTimeout(() => {
+      setCurrentIndex((currentIndex - 1) % menu.length);
+      setTransitioning(false);
+    }, 300);
   }
     return (
-      <PageView isDarkBackground maxHeight='100vh'>
-          <div className="menu-grid" key={currentIndex}>
+      <PageView isDarkBackground maxHeight='100vh' backgroundColor="#4e5e56">
+          <div className={`menu-grid ${transitioning ? 'transitioning' : ''}`} key={currentIndex}>
             <button className="menu-nav" onClick={handlePrev}>
               <FontAwesomeIcon icon={faArrowLeft} />
             </button>
-            <MenuItem item={menu[(currentIndex - 1 + menu.length) % menu.length]}/>
-            <MenuItem item={menu[currentIndex]}/>
-            <MenuItem item={menu[(currentIndex + 1) % menu.length]}/>
+            <MenuItem className="menu-item" item={menu[(currentIndex - 1 + menu.length) % menu.length]}/>
+            <MenuItem className="menu-item" item={menu[currentIndex]}/>
+            <MenuItem className="menu-item" item={menu[(currentIndex + 1) % menu.length]}/>
             <button className="menu-nav" onClick={handleNext}>
               <FontAwesomeIcon icon={faArrowRight} />
             </button>

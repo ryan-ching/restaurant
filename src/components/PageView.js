@@ -19,7 +19,7 @@ const PageView = ({
                 alignItems,
                 maxWidth: '100%',
                 maxHeight: '50vh',
-                border: '2px solid black',
+                border: '3px solid black',
                 ...boxProps
             }}>
                 {children}

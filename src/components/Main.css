@@ -12,7 +12,7 @@
 }
 
 .main-button {
-    background-color: #4CAF50;
+    background-color: #b1a345;
     border: none;
     border-radius: 50%;
     color: white;
@@ -23,15 +23,27 @@
 }
 
 .main-text {
-    color: black;
+    color: white;
     padding: 10px;
     font-size: 50px;
+    text-align: center;
 }
 
+.main-subtext {
+    font-size: 30px;
+    text-align: center;
+}
+
+.main-call {
+    color: white;
+    font-size: 50px;
+    text-align: left;
+
+}
 .main-item img {
     box-shadow: 5px 5px 5px rgba(1, 1, 1, 1);
     margin: 2vh;
-    width: 30vw;
+    width: 25vw;
     height: 25vh;
 }
 
